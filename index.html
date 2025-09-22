@@ -50,9 +50,8 @@
         <div class="options-container">
             <div class="userOptions">
             <!-- • three image/placeholders for rock, paper and scissors images -->
-            <!-- - each image will have an hover affect and once selecter it will keep this hover format for 2 seconds -->
+            <!-- - each image will after the user selected it and will keep this new state forr 1-2 seconds -->
 
-                <!-- <img src="./static/images/waitPaper.png" alt="Waiting Rock Image"> -->
                 <img id="rock" src="./static/images/size256/waitRock.png" alt="Waiting Rock Image">
                 <img id="paper" src="./static/images/size256/waitPaper.png" alt="Waiting Paper Image">
                 <img id="scissors" src="./static/images/size256/waitScissors.png" alt="Waiting Scissors Image">
@@ -60,17 +59,16 @@
             </div>
             <div class="computerSelection">
                 <!-- • a fourth image/placeholder to show the option chosen by the computer -->
-                <!-- • once he click on any option, the fourth image will be updated to show the computer choice -->
+                <!-- • once the user clicked on any option, the fourth image will be updated to show the computer choice -->
                 <img id="cpu" src="./static/images/size256/waitComputerThinking.png" alt="Waiting Scissors Image">
             </div>
         </div>
-        <!-- • a restart button to restart the scoreboard -->
+        <!-- • a restart button to restart the scoreboard and play again from the initial state-->
         <div class="reset-btn-container">
             <button class="reset-btn" id="reset">Reset Game</button>
         </div>
         
-        <!-- • the winner option will be presented in text at the botton saying: Scissors defeat paper. -->
-        <!-- • After five games the the message will be: "{player} won: {score}. If you want to play again restart the scoreboard" -->
+        <!-- • After five games, the winner will be presented in text at the botton saying: User won, opponent won, It's a draw. -->
         <div class="message" id="message"></div>
         
     </body>
