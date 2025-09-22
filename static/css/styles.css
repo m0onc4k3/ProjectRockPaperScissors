@@ -1,0 +1,121 @@
+/* FONTS */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'sans-serif';
+}
+/* TITLE */
+h1 {
+    margin: 20px 0 0 0;
+    text-align: center;
+    font-size: 52px;
+    font-weight: 700;
+}
+/* OPTIONS */
+.options-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+    margin: 20px auto;
+}
+.userOptions {
+    width: 768px;
+    gap: 0;
+    padding: 0;
+}
+.userOptions img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    float: left;
+}
+@keyframes color-change {
+    0% { background-color: yellow; }
+    50% { background-color: lime; }
+    100% { background-color: yellow; }
+}
+.computerSelection {
+    animation: color-change 3s infinite alternate;
+}
+/* SCOREBOARD */
+.scoreboard-container {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin: 30px auto;
+}
+#user {
+    width: 768px;
+}
+#oponent {
+    width: 300px;
+}
+.scoreboard {
+    text-align: center;
+    width: 45%;
+}
+.player-name {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.score-circles {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid black;
+    transition: all 0.3s ease;
+}
+.won {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+.lost {
+    background-color: #F44336;
+    border-color: #F44336;
+}
+.draw {
+    background-color: orange;
+    border-color: orange;
+}
+.score {
+    font-size: 2rem;
+    margin-top: 15px;
+    font-weight: bold;
+}
+/* RESET BUTTON */
+.reset-btn-container {
+    display: flex;
+    justify-content: center;
+}
+.reset-btn {
+    margin: 20px auto;
+    background-color: #fdbb2d;
+    color: black;
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.reset-btn:hover {
+    transform: scale(1.05);
+}
+/* MESSAGE */
+.message {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    min-height: 40px;
+    font-weight: bold;
+    color: #fdbb2d;
+}

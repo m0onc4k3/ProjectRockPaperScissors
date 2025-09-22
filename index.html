@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="static/css/styles.css">
+        <script src="static/js/script.js" defer></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A Rock Paper Scissors game web page">
+        <title>Play: Rock-Paper-Scissors</title>
+    </head>
+    <body>
+        <!-- An user can play after the page have been loaded -->
+        <!-- An user will see: -->
+
+        <!-- • a text asking to choose one option to start playing -->
+        <h1>Pick an option and start playing!</h1>
+        
+        <!-- • a scoreboard telling how many games have passed and how many points have won each participant (user-computer) -->
+        <div class="scoreboard-container">
+            <div class="scoreboard" id="user">
+                <div class="player-name">User</div>
+                
+                <div class="score-circles">
+                    <div class="circle" id="user-select-0"></div>
+                    <div class="circle" id="user-select-1"></div>
+                    <div class="circle" id="user-select-2"></div>
+                    <div class="circle" id="user-select-3"></div>
+                    <div class="circle" id="user-select-4"></div>
+                </div>
+                
+                <div class="score">Score: <span id="user-score">0</span></div>
+            </div>
+            
+            <div class="scoreboard" id="oponent">
+                <div class="player-name">Computer</div>
+
+                <div class="score-circles">
+                    <div class="circle" id="oponent-select-0"></div>
+                    <div class="circle" id="oponent-select-1"></div>
+                    <div class="circle" id="oponent-select-2"></div>
+                    <div class="circle" id="oponent-select-3"></div>
+                    <div class="circle" id="oponent-select-4"></div>
+                </div>
+                
+                <div class="score">Score: <span id="oponent-score">0</span></div>
+            </div>
+        </div>
+        
+        
+        <div class="options-container">
+            <div class="userOptions">
+            <!-- • three image/placeholders for rock, paper and scissors images -->
+            <!-- - each image will have an hover affect and once selecter it will keep this hover format for 2 seconds -->
+
+                <!-- <img src="./static/images/waitPaper.png" alt="Waiting Rock Image"> -->
+                <img id="rock" src="./static/images/size256/waitRock.png" alt="Waiting Rock Image">
+                <img id="paper" src="./static/images/size256/waitPaper.png" alt="Waiting Paper Image">
+                <img id="scissors" src="./static/images/size256/waitScissors.png" alt="Waiting Scissors Image">
+                
+            </div>
+            <div class="computerSelection">
+                <!-- • a fourth image/placeholder to show the option chosen by the computer -->
+                <!-- • once he click on any option, the fourth image will be updated to show the computer choice -->
+                <img id="cpu" src="./static/images/size256/waitComputerThinking.png" alt="Waiting Scissors Image">
+            </div>
+        </div>
+        <!-- • a restart button to restart the scoreboard -->
+        <div class="reset-btn-container">
+            <button class="reset-btn" id="reset">Reset Game</button>
+        </div>
+        
+        <!-- • the winner option will be presented in text at the botton saying: Scissors defeat paper. -->
+        <!-- • After five games the the message will be: "{player} won: {score}. If you want to play again restart the scoreboard" -->
+        <div class="message" id="message"></div>
+        
+    </body>
+</html>
