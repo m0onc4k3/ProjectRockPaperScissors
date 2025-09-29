@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="static/css/styles.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
         <script src="static/js/script.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="A Rock Paper Scissors game web page">
@@ -13,7 +14,18 @@
         <!-- An user will see: -->
 
         <!-- • a text asking to choose one option to start playing -->
-        <h1>Pick an option and start playing!</h1>
+        <div class="header-container">
+            <h1 class="instructions">Pick an option and start playing!</h1>
+            <!-- Theme toggle switch -->
+            <div class="theme-toggle">
+                <i class='bx bxs-sun'></i>
+                <label class="switch">
+                    <input type="checkbox" id="themeToggle">
+                    <span class="slider"></span>
+                </label>
+                <i class='bx bxs-moon' ></i>
+            </div>
+        </div>
         
         <!-- • a scoreboard telling how many games have passed and how many points have won each participant (user-computer) -->
         <div class="scoreboard-container">
@@ -31,18 +43,18 @@
                 <div class="score">Score: <span id="user-score">0</span></div>
             </div>
             
-            <div class="scoreboard" id="oponent">
+            <div class="scoreboard" id="opponent">
                 <div class="player-name">Computer</div>
 
                 <div class="score-circles">
-                    <div class="circle" id="oponent-select-0"></div>
-                    <div class="circle" id="oponent-select-1"></div>
-                    <div class="circle" id="oponent-select-2"></div>
-                    <div class="circle" id="oponent-select-3"></div>
-                    <div class="circle" id="oponent-select-4"></div>
+                    <div class="circle" id="opponent-select-0"></div>
+                    <div class="circle" id="opponent-select-1"></div>
+                    <div class="circle" id="opponent-select-2"></div>
+                    <div class="circle" id="opponent-select-3"></div>
+                    <div class="circle" id="opponent-select-4"></div>
                 </div>
                 
-                <div class="score">Score: <span id="oponent-score">0</span></div>
+                <div class="score">Score: <span id="opponent-score">0</span></div>
             </div>
         </div>
         
@@ -70,6 +82,7 @@
         
         <!-- • After five games, the winner will be presented in text at the botton saying: User won, opponent won, It's a draw. -->
         <div class="message" id="message"></div>
+
         
     </body>
 </html>
